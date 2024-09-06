@@ -24,10 +24,14 @@
         .then(data => {
           document.body.insertAdjacentHTML('beforeend', data)
           // Function to open dialog with parameters
-          window.openDialog = function (title, content) {
-            document.getElementById('dialog-title').innerHTML = title
-            document.getElementById('dialog-content').innerHTML = content
-            document.getElementById('dialog').showModal()
+          window.openDialog = function (title, html) {
+            fetch(html)
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById('dialog-title').textContent = title
+                document.getElementById('dialog-content').innerHTML = data
+                document.getElementById('dialog').showModal()
+              })
           }
         })
     })
@@ -39,10 +43,7 @@
 <table>
   <tr>
     <td>
-      <a href="#" onclick="openDialog(
-        'New Title',
-        `<p>New content with <strong>HTML</strong> elements</p>`,
-      )">
+      <a href="#" onclick="openDialog( '&lt;!-- ... --&gt;', `comments.html`)">
         &lt;!-- ... --&gt;
       </a>
     </td>
