@@ -19,6 +19,28 @@
     pre code {
       white-space: pre-wrap;
     }
+    a {
+      text-decoration: none;
+    }
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+      color: black;
+    }
+    .a-card {
+      padding: 0.5rem;
+      background-color: dodgerblue;
+      border-radius: 8px;
+      color: white;
+    }
+    .block {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50rem;
+      padding: 10px;
+    }
   </style>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -50,6 +72,18 @@
 </head>
 <body>
 <h1>List of HTML Tags</h1>
+
+<h2><a href="#a">a</a></h2>
+<div class="block">
+  <a href="#" class="a-card">&lt;div&gt;</a>
+  <a href="#" class="a-card">&lt;a&gt;</a>
+  <a href="#" class="a-card">&lt;cite&gt;</a>
+</div>
+
+<h2><a href="#a">b</a></h2>
+<div class="block">
+  <a href="#" class="a-card">&lt;div&gt;</a>
+</div>
 
 <table>
   <tr>
