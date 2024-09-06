@@ -30,6 +30,7 @@
       background-color: dodgerblue;
       border-radius: 8px;
       color: white;
+      cursor: pointer;
     }
     .block {
       display: flex;
@@ -50,7 +51,7 @@
           document.body.insertAdjacentHTML('beforeend', data)
           // Function to open dialog with parameters
           window.openDialog = function (title, html) {
-            event.preventDefault();
+            event.preventDefault()
             fetch(html)
               .then(response => response.text())
               .then(data => {
@@ -74,241 +75,241 @@
 <body>
 <h1>List of HTML Tags</h1>
 
+<hr/>
+
 <h2><a href="#a">A</a></h2>
 <div class="block">
-  <a href="#">&lt;a&gt;</a>
-  <a href="#">&lt;audio&gt;</a>
-  <a href="#">&lt;aside&gt;</a>
-  <a href="#">&lt;article&gt;</a>
-  <a href="#">&lt;area&gt;</a>
-  <a href="#">&lt;applet&gt;</a>
-  <a href="#">&lt;address&gt;</a>
-  <a href="#">&lt;acronym&gt;</a>
-  <a href="#">&lt;abbr&gt;</a>
-  <a href="#">&lt;a&gt;</a>
+  <a>&lt;a&gt;</a>
+  <a>&lt;audio&gt;</a>
+  <a>&lt;aside&gt;</a>
+  <a>&lt;article&gt;</a>
+  <a>&lt;area&gt;</a>
+  <a>&lt;applet&gt;</a>
+  <a>&lt;address&gt;</a>
+  <a>&lt;acronym&gt;</a>
+  <a>&lt;abbr&gt;</a>
+  <a>&lt;a&gt;</a>
 </div>
 
 <h2><a href="#b">B</a></h2>
 <div class="block">
-  <a href="#">&lt;button&gt;</a>
-  <a href="#">&lt;br&gt;</a>
-  <a href="#">&lt;body&gt;</a>
-  <a href="#">&lt;blockquote&gt;</a>
-  <a href="#">&lt;big&gt;</a>
-  <a href="#">&lt;bdo&gt;</a>
-  <a href="#">&lt;bdi&gt;</a>
-  <a href="#">&lt;basefont&gt;</a>
-  <a href="#">&lt;base&gt;</a>
-  <a href="#">&lt;b&gt;</a>
+  <a>&lt;button&gt;</a>
+  <a>&lt;br&gt;</a>
+  <a>&lt;body&gt;</a>
+  <a>&lt;blockquote&gt;</a>
+  <a>&lt;big&gt;</a>
+  <a>&lt;bdo&gt;</a>
+  <a>&lt;bdi&gt;</a>
+  <a>&lt;basefont&gt;</a>
+  <a>&lt;base&gt;</a>
+  <a>&lt;b&gt;</a>
 </div>
 
 <h2><a href="#c">C</a></h2>
 <div class="block">
-  <a href="#"
-     onclick="openDialog( '&lt;cite&gt;', `cite.html`)">
+  <a onclick="openDialog( '&lt;cite&gt;', `cite.html`)">
     &lt;cite&gt;
   </a>
-  <a href="#">&lt;center&gt;</a>
-  <a href="#">&lt;caption&gt;</a>
-  <a href="#">&lt;canvas&gt;</a>
-  <a href="#">&lt;colgroup&gt;</a>
-  <a href="#">&lt;col&gt;</a>
-  <a href="#">&lt;code&gt;</a>
+  <a>&lt;center&gt;</a>
+  <a>&lt;caption&gt;</a>
+  <a>&lt;canvas&gt;</a>
+  <a>&lt;colgroup&gt;</a>
+  <a>&lt;col&gt;</a>
+  <a>&lt;code&gt;</a>
 </div>
 
 <h2><a href="#d">D</a></h2>
 <div class="block">
-  <a href="#">&lt;!DOCTYPE&gt;</a>
-  <a href="#">&lt;dt&gt;</a>
-  <a href="#">&lt;dl&gt;</a>
-  <a href="#">&lt;div&gt;</a>
-  <a href="#">&lt;dir&gt;</a>
-  <a href="#">&lt;dialog&gt;</a>
-  <a href="#">&lt;dfn&gt;</a>
-  <a href="#">&lt;details&gt;</a>
-  <a href="#">&lt;del&gt;</a>
-  <a href="#">&lt;dd&gt;</a>
-  <a href="#">&lt;datalist&gt;</a>
-  <a href="#">&lt;data&gt;</a>
+  <a>&lt;!DOCTYPE&gt;</a>
+  <a>&lt;dt&gt;</a>
+  <a>&lt;dl&gt;</a>
+  <a>&lt;div&gt;</a>
+  <a>&lt;dir&gt;</a>
+  <a>&lt;dialog&gt;</a>
+  <a>&lt;dfn&gt;</a>
+  <a>&lt;details&gt;</a>
+  <a>&lt;del&gt;</a>
+  <a>&lt;dd&gt;</a>
+  <a>&lt;datalist&gt;</a>
+  <a>&lt;data&gt;</a>
 </div>
 
 <h2><a href="#e">E</a></h2>
 <div class="block">
-  <a href="#">&lt;embed&gt;</a>
-  <a href="#">&lt;em&gt;</a>
+  <a>&lt;embed&gt;</a>
+  <a>&lt;em&gt;</a>
 </div>
 
 <h2><a href="#f">F</a></h2>
 <div class="block">
-  <a href="#">&lt;frameset&gt;</a>
-  <a href="#">&lt;frame&gt;</a>
-  <a href="#">&lt;form&gt;</a>
-  <a href="#">&lt;footer&gt;</a>
-  <a href="#">&lt;font&gt;</a>
-  <a href="#">&lt;figure&gt;</a>
-  <a href="#">&lt;figcaption&gt;</a>
-  <a href="#">&lt;fieldset&gt;</a>
+  <a>&lt;frameset&gt;</a>
+  <a>&lt;frame&gt;</a>
+  <a>&lt;form&gt;</a>
+  <a>&lt;footer&gt;</a>
+  <a>&lt;font&gt;</a>
+  <a>&lt;figure&gt;</a>
+  <a>&lt;figcaption&gt;</a>
+  <a>&lt;fieldset&gt;</a>
 </div>
 
 <h2><a href="#g">G</a></h2>
 <div class="block">
-  <a href="#">&lt;div&gt;</a>
+  No Tags
 </div>
 
 <h2><a href="#h">H</a></h2>
 <div class="block">
-  <a href="#">&lt;html&gt;</a>
-  <a href="#">&lt;hr&gt;</a>
-  <a href="#">&lt;header&gt;</a>
-  <a href="#">&lt;head&gt;</a>
-  <a href="#">&lt;h1&gt; to &lt;h6&gt;</a>
+  <a>&lt;html&gt;</a>
+  <a>&lt;hr&gt;</a>
+  <a>&lt;header&gt;</a>
+  <a>&lt;head&gt;</a>
+  <a>&lt;h1&gt; to &lt;h6&gt;</a>
 </div>
 
 <h2><a href="#i">I</a></h2>
 <div class="block">
-  <a href="#">&lt;ins&gt;</a>
-  <a href="#">&lt;input&gt;</a>
-  <a href="#">&lt;img&gt;</a>
-  <a href="#">&lt;iframe&gt;</a>
-  <a href="#">&lt;i&gt;</a>
+  <a>&lt;ins&gt;</a>
+  <a>&lt;input&gt;</a>
+  <a>&lt;img&gt;</a>
+  <a>&lt;iframe&gt;</a>
+  <a>&lt;i&gt;</a>
 </div>
 
 <h2><a href="#j">J</a></h2>
 <div class="block">
-  <a href="#">&lt;div&gt;</a>
+  No Tags
 </div>
 
 <h2><a href="#K">K</a></h2>
 <div class="block">
-  <a href="#">&lt;kbd&gt;</a>
+  <a>&lt;kbd&gt;</a>
 </div>
 
 <h2><a href="#l">L</a></h2>
 <div class="block">
-  <a href="#">&lt;link&gt;</a>
-  <a href="#">&lt;li&gt;</a>
-  <a href="#">&lt;legend&gt;</a>
-  <a href="#">&lt;label&gt;</a>
+  <a>&lt;link&gt;</a>
+  <a>&lt;li&gt;</a>
+  <a>&lt;legend&gt;</a>
+  <a>&lt;label&gt;</a>
 </div>
 
 <h2><a href="#m">M</a></h2>
 <div class="block">
-  <a href="#">&lt;meter&gt;</a>
-  <a href="#">&lt;meta&gt;</a>
-  <a href="#">&lt;mark&gt;</a>
-  <a href="#">&lt;map&gt;</a>
-  <a href="#">&lt;main&gt;</a>
+  <a>&lt;meter&gt;</a>
+  <a>&lt;meta&gt;</a>
+  <a>&lt;mark&gt;</a>
+  <a>&lt;map&gt;</a>
+  <a>&lt;main&gt;</a>
 </div>
 
 <h2><a href="#n">N</a></h2>
 <div class="block">
-  <a href="#">&lt;noscript&gt;</a>
-  <a href="#">&lt;noframes&gt;</a>
-  <a href="#">&lt;nav&gt;</a>
+  <a>&lt;noscript&gt;</a>
+  <a>&lt;noframes&gt;</a>
+  <a>&lt;nav&gt;</a>
 </div>
 
 <h2><a href="#o">O</a></h2>
 <div class="block">
-  <a href="#">&lt;object&gt;</a>
-  <a href="#">&lt;output&gt;</a>
-  <a href="#">&lt;option&gt;</a>
-  <a href="#">&lt;optgroup&gt;</a>
-  <a href="#">&lt;ol&gt;</a>
+  <a>&lt;object&gt;</a>
+  <a>&lt;output&gt;</a>
+  <a>&lt;option&gt;</a>
+  <a>&lt;optgroup&gt;</a>
+  <a>&lt;ol&gt;</a>
 </div>
 
 <h2><a href="#o">P</a></h2>
 <div class="block">
-  <a href="#">&lt;progress&gt;</a>
-  <a href="#">&lt;pre&gt;</a>
-  <a href="#">&lt;picture&gt;</a>
-  <a href="#">&lt;param&gt;</a>
-  <a href="#">&lt;p&gt;</a>
+  <a>&lt;progress&gt;</a>
+  <a>&lt;pre&gt;</a>
+  <a>&lt;picture&gt;</a>
+  <a>&lt;param&gt;</a>
+  <a>&lt;p&gt;</a>
 </div>
 
 <h2><a href="#q">Q</a></h2>
 <div class="block">
-  <a href="#">&lt;q&gt;</a>
+  <a>&lt;q&gt;</a>
 </div>
 
 <h2><a href="#r">R</a></h2>
 <div class="block">
-  <a href="#">&lt;ruby&gt;</a>
-  <a href="#">&lt;rt&gt;</a>
-  <a href="#">&lt;rp&gt;</a>
+  <a>&lt;ruby&gt;</a>
+  <a>&lt;rt&gt;</a>
+  <a>&lt;rp&gt;</a>
 </div>
 
 <h2><a href="#s">S</a></h2>
 <div class="block">
-  <a href="#">&lt;style&gt;</a>
-  <a href="#">&lt;strong&gt;</a>
-  <a href="#">&lt;strike&gt;</a>
-  <a href="#">&lt;span&gt;</a>
-  <a href="#">&lt;source&gt;</a>
-  <a href="#">&lt;small&gt;</a>
-  <a href="#">&lt;select&gt;</a>
-  <a href="#">&lt;section&gt;</a>
-  <a href="#">&lt;script&gt;</a>
-  <a href="#">&lt;samp&gt;</a>
-  <a href="#">&lt;s&gt;</a>
-  <a href="#">&lt;svg&gt;</a>
-  <a href="#">&lt;sup&gt;</a>
-  <a href="#">&lt;summary&gt;</a>
-  <a href="#">&lt;sub&gt;</a>
+  <a>&lt;style&gt;</a>
+  <a>&lt;strong&gt;</a>
+  <a>&lt;strike&gt;</a>
+  <a>&lt;span&gt;</a>
+  <a>&lt;source&gt;</a>
+  <a>&lt;small&gt;</a>
+  <a>&lt;select&gt;</a>
+  <a>&lt;section&gt;</a>
+  <a>&lt;script&gt;</a>
+  <a>&lt;samp&gt;</a>
+  <a>&lt;s&gt;</a>
+  <a>&lt;svg&gt;</a>
+  <a>&lt;sup&gt;</a>
+  <a>&lt;summary&gt;</a>
+  <a>&lt;sub&gt;</a>
 </div>
 
 <h2><a href="#t">T</a></h2>
 <div class="block">
-  <a href="#">&lt;tt&gt;</a>
-  <a href="#">&lt;track&gt;</a>
-  <a href="#">&lt;tr&gt;</a>
-  <a href="#">&lt;title&gt;</a>
-  <a href="#">&lt;time&gt;</a>
-  <a href="#">&lt;thead&gt;</a>
-  <a href="#">&lt;th&gt;</a>
-  <a href="#">&lt;tfoot&gt;</a>
-  <a href="#">&lt;textarea&gt;</a>
-  <a href="#">&lt;template&gt;</a>
-  <a href="#">&lt;td&gt;</a>
-  <a href="#">&lt;tbody&gt;</a>
-  <a href="#">&lt;table&gt;</a>
+  <a>&lt;tt&gt;</a>
+  <a>&lt;track&gt;</a>
+  <a>&lt;tr&gt;</a>
+  <a>&lt;title&gt;</a>
+  <a>&lt;time&gt;</a>
+  <a>&lt;thead&gt;</a>
+  <a>&lt;th&gt;</a>
+  <a>&lt;tfoot&gt;</a>
+  <a>&lt;textarea&gt;</a>
+  <a>&lt;template&gt;</a>
+  <a>&lt;td&gt;</a>
+  <a>&lt;tbody&gt;</a>
+  <a>&lt;table&gt;</a>
 </div>
 
 <h2><a href="#u">U</a></h2>
 <div class="block">
-  <a href="#">&lt;ul&gt;</a>
-  <a href="#">&lt;u&gt;</a>
+  <a>&lt;ul&gt;</a>
+  <a>&lt;u&gt;</a>
 </div>
 
 <h2><a href="#v">V</a></h2>
 <div class="block">
-  <a href="#">&lt;video&gt;</a>
-  <a href="#">&lt;var&gt;</a>
+  <a>&lt;video&gt;</a>
+  <a>&lt;var&gt;</a>
 </div>
 
 <h2><a href="#w">W</a></h2>
 <div class="block">
-  <a href="#">&lt;wbr&gt;</a>
+  <a>&lt;wbr&gt;</a>
 </div>
 
 <h2><a href="#x">X</a></h2>
 <div class="block">
-  <a href="#">&lt;div&gt;</a>
+  No Tags
 </div>
 
 <h2><a href="#y">Y</a></h2>
 <div class="block">
-  <a href="#">&lt;div&gt;</a>
+  No Tags
 </div>
 
 <h2><a href="#z">Z</a></h2>
 <div class="block">
-  <a href="#">&lt;div&gt;</a>
+  No Tags
 </div>
 
 <h2><a href="#others">Others</a></h2>
 <div class="block">
-  <a href="#"
-     onclick="openDialog( '&lt;!-- ... --&gt;', `comments.html`)">
+  <a onclick="openDialog( '&lt;!-- ... --&gt;', `comments.html`)">
     &lt;!-- ... --&gt;
   </a>
 </div>
