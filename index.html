@@ -50,6 +50,7 @@
           document.body.insertAdjacentHTML('beforeend', data)
           // Function to open dialog with parameters
           window.openDialog = function (title, html) {
+            event.preventDefault();
             fetch(html)
               .then(response => response.text())
               .then(data => {
@@ -215,11 +216,6 @@
 
 <table>
   <tr>
-    <td>
-      <a href="#" onclick="openDialog( '&lt;!-- ... --&gt;', `comments.html`)">
-        &lt;!-- ... --&gt;
-      </a>
-    </td>
     <td>
       <a href="#" onclick="openDialog( '&lt;cite&gt;', `cite.html`)">
         &lt;cite&gt;
