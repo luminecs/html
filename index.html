@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Inter, serif;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     tr, td {
       background-color: antiquewhite;
@@ -33,6 +33,14 @@
                 document.getElementById('dialog').showModal()
               })
           }
+
+          // Add event listener to close dialog when clicking outside of it
+          const dialog = document.getElementById('dialog')
+          dialog.addEventListener('click', (event) => {
+            if (event.target === dialog) {
+              dialog.close()
+            }
+          })
         })
     })
   </script>
