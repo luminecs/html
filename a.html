@@ -1,0 +1,33 @@
+<p>在 HTML 中，&lt;a&gt; 标签用于创建超链接，即指向互联网上其他网页、文件或资源的链接。&lt;a&gt; 中的“a”代表“锚点”。</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;a href="https://luminecs.com"&gt;Visit luminecs.com!&lt;/a&gt;</code></pre>
+
+<h4>Output</h4>
+<a href="https://luminecs.com">Visit luminecs.com!</a>
+
+<hr/>
+
+<p>在上面的例子中，“http://luminecs.com;”是链接指向的 URL 或网址。“Visit luminecs.com!”文本是用户将在网页上看到的内容，当他们点击它时，他们将被带到 luminecs.com 网站。</p>
+
+<p>该&lt;a&gt;标签还可用于创建指向网页特定部分的链接，称为锚链接。要创建锚链接，您需要为要链接的元素指定“id”属性，然后使用该 id 作为标签中的 href 值&lt;a&gt;。</p>
+
+<p>以下是如何创建锚链接的示例：</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;h2 id=&quot;section1&quot;&gt;第 1 节&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;#section1&quot;&gt;转至第 1 部分&lt;/a&gt;&lt;/p&gt;</code></pre>
+
+<h4>Output</h4>
+<h2 id="section1">第 1 节</h2>
+<p><a href="#section1">转至第 1 部分</a></p>
+
+<hr/>
+
+<p>在上面的示例中，&lt;h2&gt;标签的&ldquo;id&rdquo;属性设置为&ldquo;section1&rdquo;，这会在页面上的该点处创建一个锚点。标签&lt;a&gt;的 href 值为&ldquo;#section1&rdquo;，链接到该锚点。当用户点击该链接时，页面将滚动到 ID 为&ldquo;section1&rdquo;的部分。</p>
+
+<p>该&lt;a&gt;标签还可以与其他 HTML 元素（例如图像或按钮）结合使用，以创建可点击的链接。</p>
