@@ -70,6 +70,32 @@
           })
         })
     })
+    // document.addEventListener('DOMContentLoaded', function () {
+    //   const readTextButton = document.getElementById('read-text')
+    //   if ('speechSynthesis' in window) {
+    //     readTextButton.addEventListener('click', function () {
+    //       fetch('ins.html')
+    //         .then(response => response.text())
+    //         .then(data => {
+    //           const parser = new DOMParser()
+    //           const doc = parser.parseFromString(data, 'text/html')
+    //           const textContent = doc.body.textContent
+    //
+    //           const utterance = new SpeechSynthesisUtterance(textContent)
+    //           utterance.lang = 'en-US'
+    //           utterance.onstart = function () {
+    //             console.log('Speech started')
+    //           }
+    //           utterance.onend = function () {
+    //             console.log('Speech ended')
+    //           }
+    //           window.speechSynthesis.speak(utterance)
+    //         })
+    //     })
+    //   } else {
+    //     console.error('SpeechSynthesis API is not supported in this browser.')
+    //   }
+    // })
   </script>
 </head>
 <body>
@@ -337,6 +363,6 @@
     &lt;!-- ... --&gt;
   </a>
 </div>
-
+<!--<button id="read-text">Read Text</button>-->
 </body>
 </html>
