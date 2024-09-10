@@ -1,0 +1,33 @@
+<p>The &lt;base&gt; tag in HTML is used to specify the base URL for all relative URLs in a web page. It is typically placed in the &lt;head&gt; section of the HTML document.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;base href=&quot;https://www.example.com/&quot;&gt;
+    &lt;title&gt;Example Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;&lt;a href=&quot;about.html&quot;&gt;About Us&lt;/a&gt;&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+<h4>Output</h4>
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="https://www.example.com/">
+  <title>Example Page</title>
+</head>
+<body>
+<p><a href="about.html">About Us</a></p>
+</body>
+</html>
+
+<hr/>
+
+<p>In the above example, the &lt;base&gt; tag is used to specify the base URL for all relative URLs in the web page. This means that if a relative URL is used in the web page (such as &quot;about.html&quot; in the &lt;a&gt; tag), the browser will append it to the base URL specified in the &lt;base&gt; tag to create an absolute URL.</p>
+
+<p>By using the &lt;base&gt; tag in HTML, you can ensure that all relative URLs in your web page are resolved correctly, even if the page is accessed from different locations or domains.</p>
