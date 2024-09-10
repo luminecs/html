@@ -1,0 +1,17 @@
+<p>The &lt;object&gt; tag is an HTML tag that is used to embed external content or plugins into a web page. This tag allows you to insert various types of multimedia content like images, videos, audio files, PDF files, etc. into a web page.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;object data=&quot;example.pdf&quot; type=&quot;application/pdf&quot;&gt;
+   &lt;embed src=&quot;https://golang.sk/images/blog/cheatsheets/go-cheat-sheet.pdf&quot; type=&quot;application/pdf&quot; /&gt;
+&lt;/object&gt;</code></pre>
+
+<h4>Output</h4>
+<object data="example.pdf" type="application/pdf">
+  <embed src="https://golang.sk/images/blog/cheatsheets/go-cheat-sheet.pdf" type="application/pdf" />
+</object>
+
+<hr/>
+
+<p>In this example, we specify the source of the PDF file using the data attribute, and we also specify the MIME type of the content using the type attribute. We also include a fallback &lt;embed&gt; tag to ensure that the PDF file is displayed even if the browser does not support the &lt;object&gt; tag.</p>
