@@ -1,0 +1,27 @@
+<p>The &lt;area&gt; tag in HTML is used to define a clickable area within an image map. An image map is a graphic image that is divided into clickable areas, each of which links to a different URL.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;img src=&quot;example.png&quot; alt=&quot;Example Image&quot; usemap=&quot;#example&quot;&gt;
+&lt;map name=&quot;example&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;0,0,100,100&quot; href=&quot;page1.html&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;100,0,200,100&quot; href=&quot;page2.html&quot;&gt;
+  &lt;area shape=&quot;rect&quot; coords=&quot;0,100,200,200&quot; href=&quot;page3.html&quot;&gt;
+&lt;/map&gt;</code></pre>
+
+<h4>Output</h4>
+<img src="example.png" alt="Example Image" usemap="#example">
+<map name="example">
+  <area shape="rect" coords="0,0,100,100" href="page1.html">
+  <area shape="rect" coords="100,0,200,100" href="page2.html">
+  <area shape="rect" coords="0,100,200,200" href="page3.html">
+</map>
+
+<hr/>
+
+<p>In the above example, the &lt;img&gt; tag is used to display an image called &quot;example.png&quot;. The &quot;usemap&quot; attribute is used to specify the name of the image map, which is defined using the &lt;map&gt; tag.</p>
+
+<p>The &lt;map&gt; tag contains three &lt;area&gt; tags, each of which defines a clickable area within the image map. The &quot;shape&quot; attribute is used to specify the shape of the clickable area (in this case, a rectangle), and the &quot;coords&quot; attribute is used to specify the coordinates of the clickable area within the image. The &quot;href&quot; attribute is used to specify the URL that the clickable area should link to.</p>
+
+<p>By using the &lt;area&gt; tag in conjunction with the &lt;map&gt; tag, you can create image maps that allow users to click on different parts of an image to navigate to different web pages.</p>
