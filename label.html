@@ -1,0 +1,19 @@
+<p>The &lt;label&gt; tag is an HTML element used to define a label for a form control. It is often used in conjunction with the &lt;input&gt; element to provide a description or name for the input field.</p>
+
+<p>For example, if you have a form with an input field for the user's name, you might use the &lt;label&gt; tag to provide a description for the field.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;label for=&quot;name&quot;&gt;Name:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;</code></pre>
+
+<h4>Output</h4>
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+
+<hr/>
+
+<p>In this example, the for attribute of the &lt;label&gt; tag is set to the value of the id attribute of the corresponding &lt;input&gt; element. This creates a link between the label and the input field, which is important for accessibility and usability purposes.</p>
+
+<p>When a user clicks on the label, the focus is automatically set to the corresponding input field. This makes it easier for users to interact with forms, especially on mobile devices or for users with disabilities.</p>
