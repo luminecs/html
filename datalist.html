@@ -1,0 +1,37 @@
+<p>The &lt;datalist&gt; tag in HTML is used to provide a pre-defined list of options for an input field. When a user types into an input field associated with a &lt;datalist&gt;, a dropdown list of pre-defined options is displayed. This can help improve the user experience by making it easier for them to input data.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;label for=&quot;fruits&quot;&gt;Choose a fruit:&lt;/label&gt;
+&lt;input list=&quot;fruitList&quot; id=&quot;fruits&quot; name=&quot;fruits&quot;&gt;
+
+&lt;datalist id=&quot;fruitList&quot;&gt;
+  &lt;option value=&quot;Apple&quot;&gt;
+  &lt;option value=&quot;Banana&quot;&gt;
+  &lt;option value=&quot;Cherry&quot;&gt;
+  &lt;option value=&quot;Date&quot;&gt;
+  &lt;option value=&quot;Elderberry&quot;&gt;
+  &lt;option value=&quot;Fig&quot;&gt;
+&lt;/datalist&gt;</code></pre>
+
+<h4>Output</h4>
+<label for="fruits">Choose a fruit:</label>
+<input list="fruitList" id="fruits" name="fruits">
+
+<datalist id="fruitList">
+  <option value="Apple">
+  <option value="Banana">
+  <option value="Cherry">
+  <option value="Date">
+  <option value="Elderberry">
+  <option value="Fig">
+</datalist>
+
+<hr/>
+
+<p>In the above example, the &lt;datalist&gt; tag is used to define a list of fruit options that can be displayed when a user types into the input field with the &quot;fruits&quot; id. The &lt;option&gt; tags are used to define each of the fruit options in the list.</p>
+
+<p>When the user types into the input field, a dropdown list of the pre-defined options will be displayed, allowing them to easily select the desired option.</p>
+
+<p>The &lt;datalist&gt; tag is supported in all major browsers, including Chrome, Firefox, Safari, and Edge. However, Internet Explorer does not support the &lt;datalist&gt; tag, so you may need to use a polyfill or alternative solution if you need to support IE.</p>
