@@ -1,0 +1,35 @@
+<p>The &lt;select&gt; element is used to create a dropdown list of options for the user to choose from. It is a form control element that is used within a form element. The &lt;select&gt; element is used in combination with &lt;option&gt; elements to create the list of options.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;form&gt;
+  &lt;label for=&quot;cars&quot;&gt;Choose a car:&lt;/label&gt;
+
+  &lt;select id=&quot;cars&quot; name=&quot;cars&quot;&gt;
+    &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+    &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;
+    &lt;option value=&quot;mercedes&quot;&gt;Mercedes&lt;/option&gt;
+    &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+&lt;/form&gt;</code></pre>
+
+<h4>Output</h4>
+<form>
+  <label for="cars">Choose a car:</label>
+
+  <select id="cars" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="mercedes">Mercedes</option>
+    <option value="audi">Audi</option>
+  </select>
+
+  <input type="submit" value="Submit">
+</form>
+
+<hr/>
+
+<p>In the example above, the user is presented with a dropdown list of car options to choose from. The name attribute is used to identify the control when the form is submitted. The id attribute is used to associate the &lt;label&gt; element with the &lt;select&gt; element, and also to reference the element in scripts. The &lt;option&gt; element is used to define each individual option in the list, with the value attribute specifying the value that will be submitted to the server when the form is submitted.</p>
