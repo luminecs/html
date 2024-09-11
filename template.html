@@ -1,0 +1,37 @@
+<p>The &lt;template&gt; tag in HTML is used to define a block of content that can be reused in the document. It is not rendered on the web page, but instead serves as a placeholder for content that can be cloned and inserted into the document using JavaScript.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;template id=&quot;my-template&quot;&gt;
+  &lt;h2&gt;Template Content&lt;/h2&gt;
+  &lt;p&gt;This is some example content for the template.&lt;/p&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  // Get the template content
+  const template = document.querySelector('#my-template').content;
+
+  // Clone the template content and insert it into the document
+  const clonedContent = template.cloneNode(true);
+  document.body.appendChild(clonedContent);
+&lt;/script&gt;</code></pre>
+
+<h4>Output</h4>
+<template id="my-template">
+  <h2>Template Content</h2>
+  <p>This is some example content for the template.</p>
+</template>
+
+<script>
+  // Get the template content
+  const template = document.querySelector('#my-template').content;
+
+  // Clone the template content and insert it into the document
+  const clonedContent = template.cloneNode(true);
+  document.body.appendChild(clonedContent);
+</script>
+
+<hr/>
+
+<p>In this example, we first define a template with an id of "my-template" that contains some example content. We then use JavaScript to retrieve the content of the template, clone it, and insert it into the document.</p>
