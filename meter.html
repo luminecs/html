@@ -1,0 +1,15 @@
+<p>The &lt;meter&gt; tag is an HTML element that is used to represent a scalar measurement within a known range. It is typically used to display a value within a specific range, such as the progress of a download or the strength of a password. The tag can be used with a variety of attributes, including min, max, value, low, high, and optimum, which allow developers to customize the appearance and behavior of the meter.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;label for=&quot;file-progress&quot;&gt;File upload progress:&lt;/label&gt;
+&lt;meter id=&quot;file-progress&quot; value=&quot;25&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;25%&lt;/meter&gt;</code></pre>
+
+<h4>Output</h4>
+<label for="file-progress">File upload progress:</label>
+<meter id="file-progress" value="25" min="0" max="100">25%</meter>
+
+<hr/>
+
+<p>In this example, the &lt;meter&gt; tag is used to display the progress of a file upload, with a current value of 25 out of a maximum value of 100. The min and max attributes define the range of values that the meter can represent, and the value attribute sets the current value of the meter. The text &quot;25%&quot; is displayed as a fallback for browsers that do not support the &lt;meter&gt; tag or for users who cannot see the graphical representation of the meter.</p>
