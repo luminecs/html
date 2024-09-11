@@ -1,0 +1,25 @@
+<p>The &lt;output&gt; tag is used to display the result of a calculation or a user action, typically within a &lt;form&gt; element. It is used to present the calculated result in a visual format for the user.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;form oninput=&quot;result.value=parseInt(num1.value)+parseInt(num2.value)&quot;&gt;
+  &lt;input type=&quot;number&quot; id=&quot;num1&quot; name=&quot;num1&quot; value=&quot;0&quot;&gt;
+  +
+  &lt;input type=&quot;number&quot; id=&quot;num2&quot; name=&quot;num2&quot; value=&quot;0&quot;&gt;
+  =
+  &lt;output name=&quot;result&quot; for=&quot;num1 num2&quot;&gt;&lt;/output&gt;
+&lt;/form&gt;</code></pre>
+
+<h4>Output</h4>
+<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+  <input type="number" id="num1" name="num1" value="0">
+  +
+  <input type="number" id="num2" name="num2" value="0">
+  =
+  <output name="result" for="num1 num2"></output>
+</form>
+
+<hr/>
+
+<p>In this example, two numbers are input by the user, and the sum of those numbers is automatically calculated using JavaScript and displayed in the &lt;output&gt; element. The for attribute is used to associate the &lt;output&gt; element with the input elements that are used to calculate the result.</p>
