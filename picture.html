@@ -1,0 +1,23 @@
+<p>The &lt;picture&gt; tag is used to define multiple sources for an image and display the best one based on the user's device capabilities.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;picture&gt;
+  &lt;source media=&quot;(max-width: 600px)&quot; srcset=&quot;small-image.jpg&quot;&gt;
+  &lt;source media=&quot;(max-width: 1200px)&quot; srcset=&quot;medium-image.jpg&quot;&gt;
+  &lt;source media=&quot;(min-width: 1201px)&quot; srcset=&quot;large-image.jpg&quot;&gt;
+  &lt;img src=&quot;fallback-image.jpg&quot; alt=&quot;Alternative text for the image&quot;&gt;
+&lt;/picture&gt;</code></pre>
+
+<h4>Output</h4>
+<picture>
+  <source media="(max-width: 600px)" srcset="small-image.jpg">
+  <source media="(max-width: 1200px)" srcset="medium-image.jpg">
+  <source media="(min-width: 1201px)" srcset="large-image.jpg">
+  <img src="fallback-image.jpg" alt="Alternative text for the image">
+</picture>
+
+<hr/>
+
+<p>In this example, we have three different versions of the same image, each optimized for a different screen size. The browser will automatically select the best image to display based on the device's capabilities. If none of the sources are supported by the browser, it will fall back to the image defined in the &lt;img&gt; tag.</p>
