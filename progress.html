@@ -1,0 +1,17 @@
+<p>The &lt;progress&gt; tag in HTML is used to represent the progress of a task that is in progress. It is typically used to show the progress of a download, file upload, or any other lengthy task that may take some time to complete. The &lt;progress&gt; tag can have a value between 0 and 1, and can also have an optional maximum value specified using the max attribute.</p>
+
+<hr/>
+
+<h4>Source Code</h4>
+<pre><code>&lt;label for=&quot;file&quot;&gt;File upload:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot; multiple&gt;
+&lt;progress id=&quot;upload-progress&quot; max=&quot;100&quot; value=&quot;0&quot;&gt;&lt;/progress&gt;</code></pre>
+
+<h4>Output</h4>
+<label for="file">File upload:</label>
+<input type="file" id="file" name="file" multiple>
+<progress id="upload-progress" max="100" value="0"></progress>
+
+<hr/>
+
+<p>In the example above, a file input field is displayed along with a &lt;progress&gt; tag that is initially set to 0. As the file is being uploaded, the progress bar will update to reflect the current progress. If the max attribute is specified, the progress bar will also show how much of the task is left to be completed.</p>
